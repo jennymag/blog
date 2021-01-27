@@ -5,42 +5,46 @@ import Content from "./Content";
 import Sidebar from "./Sidebar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home";
-import About from "./About";
+import Edit from "./Edit";
 import Contact from "./Contact";
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3fr;
-
-  div {
-    border: 1px solid black;
-    padding: 7px;
+  grid-template-columns: 20% 80%;
   }
+`;
+
+const Container = styled.div`
+  display: grid;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 `;
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Navigation />
-
-      <GridContainer>
-        <Sidebar />
-        <Content>
-          <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Content>
-      </GridContainer>
-    </Router>
+    <Container>
+      <Router>
+        <Navigation />
+        <Header />
+        <GridContainer>
+          <Sidebar />
+          <Content>
+            <Switch>
+              <Route path="/edit">
+                <Edit />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Content>
+        </GridContainer>
+      </Router>
+    </Container>
   );
 }
 

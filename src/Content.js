@@ -1,7 +1,9 @@
-import About from "./About";
+import styled from "styled-components";
+
+const StyleContent = styled.div``;
 
 function Content(props) {
-  return <div>{props.children}</div>;
+  return <StyleContent>{props.children}</StyleContent>;
 }
 
 export default Content;
