@@ -5,8 +5,6 @@ const Side = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  /*   border-left: 1px solid black;
-  border-bottom: 1px solid black; */
   height: 800px;
 
   * {
@@ -41,16 +39,6 @@ const Side = styled.div`
     border-radius: 100px;
     margin-top: 50px;
   }
-
-  button {
-    margin: 20px;
-    padding: 6px;
-  }
-
-  input {
-    font-style: italic;
-    padding: 5px;
-  }
 `;
 
 const SpanImg = styled.span`
@@ -62,12 +50,9 @@ function Sidebar() {
   return (
     <Side>
       <SpanImg>
-        <img src={avatar} />
+        <img src={avatar} alt="avatar" />
       </SpanImg>
       <h2>Jenny Magnessen</h2>
-      <h3>Subscribe</h3>
-      <input placeholder="Enter email address..."></input>
-      <button>Subscribe</button>
       <h3>Archive:</h3>
       <p>januari 2021</p>
       <p>februari 2021</p>

@@ -13,7 +13,7 @@ const GridTop = styled.div`
 function Header() {
   return (
     <GridTop>
-      <img src={HeaderImg} />
+      <img src={HeaderImg} alt="header" />
     </GridTop>
   );
 }

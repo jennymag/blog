@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const GridTop = styled.nav`
   display: flex;
@@ -37,7 +37,7 @@ function Navigation() {
         </li>
         <li>
           <Link to="/edit">
-            <b>Edit blog</b>
+            <b>Log in</b>
           </Link>
         </li>
       </ul>

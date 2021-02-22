@@ -58,7 +58,7 @@ function Blogpost(props) {
       <h1>{props.title}</h1>
       <h2>{props.time}</h2>
       <p>{props.text}</p>
-      <img src={props.img} />
+      <img src={props.img} alt={props.alt} />
       <StyleSpan>
         <h3>Category: Life</h3>
         <h3>Comments (0)</h3>
