@@ -36,7 +36,7 @@ function Navigation() {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <Link to="/edit">
+          <Link to="/edit/overview">
             <b>Log in</b>
           </Link>
         </li>

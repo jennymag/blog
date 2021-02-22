@@ -2,56 +2,54 @@ import Styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Navbar = Styled.ul`
-margin: 0;
-padding: 0px;
+margin: 50px;
+padding: 0;
 list-style: none;
-
 font-size: 20px;
-background-color: lightblue;
-ul {
-  margin: 0;
-  padding: 0;
+
+h3 {
+padding: 10px;
 }
-li, h3 {
-    
+li {
+  padding: 20px 0 20px 10px;
+    color: black;    
 }
 li:hover {
-    background-color: white;
+    font-style: italic;
 }
 a {
-  color: black;
-  text-decoration: none;
+    text-decoration: none;
 }
+
 `;
 
 function EditNav() {
   return (
     <>
       <Navbar>
-        <Link to="/">
-          <button>Visit blog</button>
+        <h3>Edit blog:</h3>
+        <Link to="/edit/overview">
+          <li>Overview</li>
         </Link>
-        <button>Log out</button>
+        <Link to="/edit/addpost">
+          <li>Add blog post</li>
+        </Link>
 
-        <h3>Edit blog</h3>
+        <Link to="/edit/comments">
+          <li>Comments</li>
+        </Link>
+
+        <Link to="/edit/settings">
+          <li>Settings</li>
+        </Link>
 
         <li>
-          <Link to="/edit/overview">Overview</Link>
+          <Link to="/">
+            <button>Visit blog</button>
+          </Link>
         </li>
         <li>
-          <Link to="/edit/addpost">Add blog post</Link>
-        </li>
-        <li>
-          <Link to="/edit/drafts">Drafts</Link>
-        </li>
-        <li>
-          <Link to="/edit/gallary">Image gallary</Link>
-        </li>
-        <li>
-          <Link to="/edit/comments">Comments</Link>
-        </li>
-        <li>
-          <Link to="/edit/settings">Settings</Link>
+          <button>Log out</button>
         </li>
       </Navbar>
     </>

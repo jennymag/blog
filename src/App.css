@@ -1,3 +1,37 @@
 body {
   margin: 0;
+  font-family: arial;
+}
+
+.pink {
+  background-color: pink;
+}
+.blue {
+  background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
+}
+.yellow {
+  background-color: lightyellow;
+}
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+button {
+  padding: 20px 40px 20px 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: lightgray;
+}
+input,
+textarea {
+  max-width: 1250px;
 }
