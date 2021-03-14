@@ -9,4 +9,4 @@ This is my first react project with Firebase.
 
 ## Me
 https://jennym.se  
-jenny.magnessen@student.kyh.se
+jennymagnessen@hotmail.com
