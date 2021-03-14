@@ -10,3 +10,4 @@ function Categorys() {
 }
 
 export default Categorys;
+ 
